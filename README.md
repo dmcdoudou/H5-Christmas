@@ -3,8 +3,7 @@
 > 该项目是之前帮某品牌公司做的微信公众号项目，项目上线两周内，吸引了上万用户参与活动。
 > 最近学习了ES6和VUE，便基于ES6和VUE对项目进行前端部分的重构，以进一步熟悉ES6和VUE。
 
-##手机扫描二维码浏览项目
-
+## 手机扫描二维码浏览项目
 ![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/qrcode.png)
 
 ## 项目效果展示
