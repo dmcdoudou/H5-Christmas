@@ -4,6 +4,9 @@
     <!--路由显示想要组件-->
     <router-view></router-view>
 
+    <!--预加载-->
+    <loading class="loading_container" :appear="!loaded"></loading>
+
     <!--分享提示-->
     <sharepage></sharepage>
 
@@ -17,21 +20,38 @@
 <script>
   import SharePage from './components/base/share_page/SharePage'
   import Snow from './components/base/snow/Snow'
+  import Loading from './components/base/loading/Loading'
+  import SourceLoader from './common/scripts/SourceLoader'
   import FastClick from 'fastclick'
 
   export default {
     name: 'app',
     components: {
       'sharepage': SharePage,
-      'snow': Snow
+      'snow': Snow,
+      'loading': Loading
     },
     created() {
       document.documentElement.style.fontSize = window.innerWidth / 3.2 + 'px'
       FastClick.attach(document.body)
       document.body.addEventListener('touchstart', function() { document.getElementById('audio').play() }, true)
     },
+    mounted() {
+      let loader = new SourceLoader()
+      let tasks = loader.getLoadingPromises()
+      Promise.all(tasks).then(() => {
+        console.log('loaded')
+        this.loaded = true
+      }, () => {
+        console.log('load fail')
+        setTimeout(() => {
+          this.loaded = true
+        }, 1000)
+      })
+    },
     data() {
       return {
+        loaded: false
       }
     }
   }
@@ -52,5 +72,9 @@
     background-image: url(./common/image/bg_common.jpg);
     background-size: cover;
     background-position: center;
+
+    .loading_container {
+      background-color: #d1121a;
+    }
   }
 </style>
