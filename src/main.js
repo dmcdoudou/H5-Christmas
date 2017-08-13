@@ -12,19 +12,12 @@ const INIT_WISH_LIST = [
   '和乐迪拍照一起过圣诞节',
   '收到乐迪亲自送的圣诞礼物就是我的愿望，希望能够实现，很期待喔~~~'
 ]
-// const AWARD = '一等奖'
-// const LUCKYNUM_LIST = ['00001', '66666']
 if (localStorage.wishList === undefined) {
   let wishJson = JSON.stringify(INIT_WISH_LIST)
   localStorage.wishList = wishJson
 }
-// if (localStorage.award === undefined) {
-//   localStorage.award = AWARD
-// }
-// if (localStorage.luckyNumList === undefined) {
-//   let listJson = JSON.stringify(LUCKYNUM_LIST)
-//   localStorage.luckyNumList = listJson
-// }
+if (localStorage.address === undefined) localStorage.address = ''
+if (localStorage.tel === undefined) localStorage.tel = ''
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,6 +1,9 @@
 <template>
   <div id="p6">
 
+    <!--信息框-->
+    <message :messageList="message.list" :appear="message.appear" @fadeMessage="message.appear = false"></message>
+
     <top-layers :show_menu="true" :show_award_btn="false">
       <cartoon robot="ledi" class="robot1"></cartoon>
       <cartoon robot="huang" class="robot2"></cartoon>
@@ -14,12 +17,12 @@
         <div class="award"></div>
         <div class="form">
           <div class="input_wrap">
-            <input class="input" placeholder="请输入您的地址" id="addr" type="text"/>
+            <input class="input" v-model.trim="info.address" placeholder="请输入您的地址" id="addr" type="text"/>
           </div>
           <div class="input_wrap">
-            <input class="input" placeholder="请输入您的电话" id="tel" type="tel"/>
+            <input class="input" v-model.trim="info.tel" placeholder="请输入您的电话" id="tel" type="tel"/>
           </div>
-          <btn btn_name="ci"></btn>
+          <div class="ci" @click="confirmInfo"></div>
         </div>
       </div>
 
@@ -52,19 +55,48 @@
 <script>
   import TopLayers from '../../base/top_layers/TopLayers'
   import Cartoon from '../../base/cartoon/Cartoon'
-  import Btn from '../../base/Btn/Btn'
+  import Message from '../../base/message/Message'
 
   export default {
     name: 'p6',
     components: {
       'top-layers': TopLayers,
       'cartoon': Cartoon,
-      'btn': Btn
+      'message': Message
+    },
+    methods: {
+      confirmInfo: function () {
+        this.message.list = []
+        if (this.info.address.length === 0) {
+          this.message.list.push('地址不能为空')
+        }
+        if (this.info.tel.length === 0) {
+          this.message.list.push('手机号码不能为空')
+        } else if (!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(this.info.tel)) {
+          this.message.list.push('为方便与您联系, 请输入正确的手机号码')
+        }
+//        本地模拟提交信息
+        if (this.message.list.length === 0) {
+          this.message.list = ['已经记下你的信息啦', '礼品敬请期待噢~']
+          localStorage.address = this.info.address
+          localStorage.tel = this.info.tel
+        }
+        this.message.list.push('提示：再次点击屏幕返回主页面')
+        this.message.appear = true
+      }
     },
     data () {
       return {
-        award: this.$route.params.award,
-        showGift: false
+        award: this.$route.params.award || localStorage.award,
+        showGift: false,
+        message: {
+          list: ['我是消息'],
+          appear: false
+        },
+        info: {
+          tel: localStorage.tel,
+          address: localStorage.address
+        }
       }
     }
   }

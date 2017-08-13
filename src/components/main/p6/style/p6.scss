@@ -1,4 +1,5 @@
 @import "../../../../common/style/common";
+@import "action";
 
 #p6 {
   position: absolute;
@@ -150,5 +151,16 @@
     background-size: cover;
     background-image: url("./image/msg_word06.png");
     margin: 0.5rem auto;
+  }
+
+  .ci {
+    width: 1.75rem;
+    height: 0.32rem;
+    background-size: cover;
+    background-image: url("./image/btn_ci.png");
+    margin: auto;
+    -moz-animation: btn_ci 1.3s infinite step-start;
+    -webkit-animation: btn_ci 1.3s infinite step-start;
+    animation: btn_ci 1.3s infinite step-start;
   }
 }
