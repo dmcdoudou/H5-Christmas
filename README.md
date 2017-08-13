@@ -4,30 +4,30 @@
 > 最近学习了ES6和VUE，便基于ES6和VUE对项目进行前端部分的重构，以进一步熟悉ES6和VUE。
 
 ## 项目效果展示
-1. 主页面动态效果
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p2.gif)
+**1. 主页面动态效果**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p2.gif)
 
-1. URL: /#/
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p1.png)
+**1. URL: /#/**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p1.png)
 
-1. URL: /#/p2
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p2.png)
+**1. URL: /#/p2**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p2.png)
 
-1. URL: /#/p3
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p3.png)
+**1. URL: /#/p3**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p3.png)
 
-1. URL: /#/p4
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p4.png)
+**1. URL: /#/p4**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p4.png)
 
-1. URL: /#/p5
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p5_1.png)
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p5_2.png)
+**1. URL: /#/p5**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p5_1.png)
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p5_2.png)
 
-1. URL: /#/p6
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p6_1.png)
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p6_2.png)
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p6_3.png)
-![image](https://github.com/gauzewang/H5-Christmas/tree/master/static/p6_4.png)
+**1. URL: /#/p6**
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_1.png)
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_2.png)
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_3.png)
+<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_4.png)
 
 ## 安装与运行
 
@@ -42,5 +42,3 @@ npm run dev
 npm run build
 
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
