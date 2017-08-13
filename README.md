@@ -7,27 +7,27 @@
 **1. 主页面动态效果**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p2.gif)
 
-**1. URL: /#/**
+**2. URL: /#/**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p1.png)
 
-**1. URL: /#/p2**
+**3. URL: /#/p2**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p2.png)
 
-**1. URL: /#/p3**
+**4. URL: /#/p3**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p3.png)
 
-**1. URL: /#/p4**
+**5. URL: /#/p4**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p4.png)
 
-**1. URL: /#/p5**
+**6. URL: /#/p5**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p5_1.png)
-<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p5_2.png)
+![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p5_2.png)
 
-**1. URL: /#/p6**
+**7. URL: /#/p6**
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_1.png)
-<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_2.png)
+![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_2.png)
 <br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_3.png)
-<br>![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_4.png)
+![image](https://raw.githubusercontent.com/gauzewang/H5-Christmas/master/static/p6_4.png)
 
 ## 安装与运行
 
